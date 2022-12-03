@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> Data collector web application </title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+        <body>
+            <div class="Container">
+                <h1> Collecting height</h1>
+                <h3> Please Enter your height in cms to get average height anaysis</h3>
+                <form action="{{url_for('success')}}" method="POST">
+                    <input title="Your email is safe with us" placeholder="Enter your email here" type="email" name="Email_name" required> <br>
+                    <input title="Enter your height" placeholder="Enter your height in Cms" min="55" max="200" type="number" name="Height_name" required> <br>
+                    <button type="submit"> Submit </button>
+                </form>
+            </div>
+        </body>
+</html>
